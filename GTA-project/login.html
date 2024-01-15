@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .mainparent {
+        background-image: url(gta-img/login.jpg);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent {
+        background-color: rgba(0, 0, 0, 0.832);
+        border-radius: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 50px;
+        text-align-last: left;
+        color: white;
+    }
+</style>
+<body>
+    <div class="mainparent">
+        <div class="parent">
+            <form onsubmit="login(event)">
+                <table cellspacing="20px">
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td>:</td>
+                        <td>
+                            <input name="email" id="mail" type="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div id="email-error" class="error-message"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td>:</td>
+                        <td>
+                            <input name="password" id="pass" type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div id="password-error" class="error-message"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Don't have an account? <a href="create account.html" target="_blank">Create account</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button style="background-color: blue; color: white; border: none; border-radius: 5px; padding: 10px;" type="button" onclick="login(event)">Log in</button>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script>
+        function login(event) {
+            event.preventDefault();
+
+            var email = document.getElementById("mail").value;
+            var password = document.getElementById("pass").value;
+            var emailErrorElement = document.getElementById("email-error");
+            var passwordErrorElement = document.getElementById("password-error");
+
+            emailErrorElement.textContent = "";
+            passwordErrorElement.textContent = "";
+
+            if (email === "") {
+                emailErrorElement.textContent = "Please enter your email";
+            } 
+            else if (password === "") {
+                passwordErrorElement.textContent = "Please enter your password";
+            } 
+            else {
+                window.location.href = "overview.html";
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-icon">&#9776;</div>
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- Your content goes here -->
+
+</body>
+</html>
