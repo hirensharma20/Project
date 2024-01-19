@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="gta-img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .menu-icon {
+            width: 35px;
+            height: 3px;
+            background-color: black;
+            margin: 6px 0;
+            cursor: pointer;
+        }
+
+        .r-text {
+            height: 50px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid rgba(128, 128, 128, 0.472);
+            border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+            height: 70px;
+            width: 100%;
+            padding: 0px 30px;
+            position: absolute;
+            padding: 10px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .icon {
+            background-color: white;
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: fit-content;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .icon:hover .dropdown-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dropdown-content a {
+            padding: 12px;
+            text-align: left;
+            color: black;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .mainparent {
+            padding-top: 90px;
+            height: fit-content;
+            width: 100%;
+        }
+
+        .support-img {
+            height: 400px;
+            width: 300px;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 30px;
+            padding: 10px 100px;
+        }
+
+        .one {
+            border: 1px solid rgba(128, 128, 128, 0.415);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #two1 {
+            grid-row: span 5;
+        }
+
+        #two2 {
+            grid-column: span 3;
+        }
+
+        #two3 {
+            grid-column: span 3;
+            font-size: 35px;
+        }
+
+        #two4,
+        #two5,
+        #two6,
+        #two7,
+        #two8,
+        #two9,
+        #two10,
+        #two11 {
+            grid-row: span 2;
+        }
+
+        .search {
+            width: 650px;
+            height: 50px;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+            padding: 10px 30px;
+        }
+
+        .content-box {
+            height: fit-content;
+            width: 700px;
+            position: relative;
+            top: 80px;
+            left: 550px;
+        }
+
+        .title {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 20px;
+        }
+
+        .titles {
+            border: rgba(128, 128, 128, 0.35) 1px solid;
+            padding: 10px 15px;
+            width: 350px;
+        }
+
+        .footer {
+            margin-top: 150px;
+        }
+
+        .f-links {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .lang {
+            border: none;
+        }
+
+        .r-plus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="icon">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="dropdown-content">
+                <a href="#">Support Home</a>
+                <a href="#">Service Status</a>
+                <a href="#">Submit a Ticket</a>
+                <div style="display: flex;">
+                    <a href="#"><i class="bi bi-twitter"></i>@RockstarSupport</a>
+                </div>
+            </div>
+        </div>
+        <img class="r-text" src="gta-img/r-support.png" alt="Rockstar Support">
+        <button style="background-color: black; color: white; padding: 10px 20px;">Sign in</button>
+    </div>
+    <div class="mainparent">
+        <div class="parent container">
+            <div id="two1">
+                <img src="gta-img/support-img.png">
+            </div>
+            <div id="two2">
+                <input class="search" type="search" placeholder="Find Answer">
+                <button class="dark"><i class="bi bi-search"></i></button>
+            </div>
+            <div id="two3">
+                Find answer and contact support by selecting an option below.
+                <hr>
+            </div>
+            <div class="one" id="two4">
+                <img src="gta-img/i-1.png">
+                Purchase/Activation
+            </div>
+            <div class="one" id="two5">
+                <img src="gta-img/i-2.png">
+                Installation
+            </div>
+            <div class="one" id="two6">
+                <img src="gta-img/i-3.png">
+                Performance
+            </div>
+            <div class="one" id="two7">
+                <img src="gta-img/i-4.png">
+                GTA+ Membership
+            </div>
+            <div class="one" id="two8">
+                <img src="gta-img/i-5.png">
+                Story Mode Play
+            </div>
+            <div class="one" id="two9">
+                <img src="gta-img/i-6.png">
+                Conectivity
+            </div>
+            <div class="one" id="two10">
+                <img src="gta-img/title-update.png">
+            </div>
+            <div class="one" id="two11">
+                <img src="gta-img/i-7.png">
+                Online Play
+            </div>
+        </div>
+        <div class="content-box">
+            <h1>Relavante Solution</h1>
+            <hr>
+            <div class="title">
+                <img class="titles" src="gta-img/t-2.png">
+                <img class="titles" src="gta-img/t-3.png">
+                <img class="titles" src="gta-img/t-4.png">
+                <img class="titles" src="gta-img/t-5.png">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <hr>
+        <div class="f-links">
+            <div>
+                <select class="lang">
+                    <option><i class="bi bi-globe"></i>ENGLISH</option>
+                    <option>GUJARATI</option>
+                    <option>HINDI</option>
+                </select>
+            </div>
+            <div style="display: flex; gap: 20px; font-size: 10px;">
+                <a href="#">CORPORATE</a>
+                <a href="#">PRIVACY</a>
+                <a href="#">LEGAL</a>
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <i class="bi bi-chat-right-quote-fill"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+        </div>
+        <div class="r-plus">
+            <img src="gta-img/r+.png">
+        </div>
+
+    </footer>
+</body>
+
+</html>
