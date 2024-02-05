@@ -500,6 +500,18 @@ nav.nav-1 {
     text-decoration: none;
 }
 
+.footer-a:hover {
+    color: yellow;
+}
+
+.bi-chat-left-quote:hover,
+.bi-instagram:hover,
+.bi-twitter:hover,
+.bi-youtube:hover,
+.bi-facebook:hover {
+    color: yellow;
+}
+
 .links2 {
     display: flex;
     justify-content: space-between;
