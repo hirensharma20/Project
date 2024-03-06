@@ -1,0 +1,373 @@
+.menu-icon {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.r-text {
+    height: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(128, 128, 128, 0.472);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+    height: 70px;
+    width: 100%;
+    padding: 0px 30px;
+    position: absolute;
+    padding: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.icon {
+    background-color: white;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.icon:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    padding: 12px;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+.mainparent {
+    padding-top: 90px;
+    height: fit-content;
+    width: 100%;
+}
+
+.support-img {
+    height: 400px;
+    width: 300px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    padding: 10px 100px;
+}
+
+.one {
+    border: 1px solid rgba(128, 128, 128, 0.415);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#two1 {
+    grid-row: span 5;
+}
+
+#two2 {
+    grid-column: span 3;
+}
+
+#two3 {
+    grid-column: span 3;
+    font-size: 35px;
+}
+
+#two4,
+#two5,
+#two6,
+#two7,
+#two8,
+#two9,
+#two10,
+#two11 {
+    grid-row: span 2;
+}
+
+.search {
+    width: 650px;
+    height: 50px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+
+.content-box {
+    height: fit-content;
+    width: 700px;
+    position: relative;
+    top: 80px;
+    left: 550px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.titles {
+    border: rgba(128, 128, 128, 0.35) 1px solid;
+    padding: 10px 15px;
+    width: 350px;
+}
+
+.footer {
+    margin-top: 150px;
+}
+
+.f-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lang {
+    border: none;
+}
+
+.r-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.g-parent {
+    display: none;
+}
+
+@media screen and (max-width: 460px) {
+
+    .main {
+        display: none;
+    }
+
+    .g-parent {
+        display: block;
+    }
+
+    .menu-icon {
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+        cursor: pointer;
+    }
+
+    .r-text {
+        height: 50px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba(128, 128, 128, 0.472);
+        border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+        height: 70px;
+        width: 100%;
+        padding: 0px 30px;
+        position: absolute;
+        padding: 10px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    .icon {
+        background-color: white;
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: fit-content;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .icon:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-content a {
+        padding: 12px;
+        text-align: left;
+        color: black;
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .mainparent {
+        height: fit-content;
+        width: 300px;
+        padding: 70px 10px;
+    }
+
+    .support-img {
+        height: 400px;
+        width: 300px;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0px 0px;
+    }
+
+    .one {
+        border: 1px solid rgba(128, 128, 128, 0.415);
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #two1 {
+        grid-row: span 5;
+        padding: 10px;
+    }
+
+    .img1 {
+        width: 250px;
+    }
+
+    #two2 {
+        grid-column: span 3;
+        padding-top: 20px;
+    }
+
+    #two3 {
+        grid-column: span 3;
+        font-size: 30px;
+        width: 260px;
+    }
+
+    #two4,
+    #two5,
+    #two6,
+    #two7,
+    #two8,
+    #two9,
+    #two10,
+    #two11 {
+        grid-row: span 2;
+    }
+
+    .search {
+        width: 250px;
+        height: 50px;
+    }
+
+    .dark {
+        background-color: black;
+        color: white;
+        padding: 10px 25px;
+    }
+
+    .content-box {
+        height: fit-content;
+        position: relative;
+        width: 300px;
+        top: 80px;
+        left: 0px;
+
+    }
+
+    .title {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    .titles {
+        border: rgba(128, 128, 128, 0.35) 1px solid;
+        padding: 10px 15px;
+        width: 350px;
+    }
+
+    .footer {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .f-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .lang {
+        border: none;
+    }
+
+    .r-plus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .f-a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .g-timg {
+        height: 40px;
+        width: 200px;
+    }
+
+    .greed {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
